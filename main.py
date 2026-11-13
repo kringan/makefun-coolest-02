@@ -2,6 +2,11 @@
 # entry.png beside this file, and the program copies it to /output/entry.png.
 # Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 #   mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
+# The image is a cyberpunk samurai on a neon rooftop at night, holding a
+# glowing katana under a rain of light, with a futuristic city behind it.
+# The program validates the PNG magic bytes and the 1 MiB size cap before
+# reporting success, so a bad or oversized image fails loudly instead of
+# silently producing a wrong entry.
 
 import os
 import shutil
